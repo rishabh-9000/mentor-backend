@@ -30,4 +30,21 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const mentorId = req.params.id;
+
+    const tasks = await Task.find({ mentor: new ObjectId(mentorId) });
+
+    if (tasks) {
+      res.json({ status: 'success', data: tasks });
+      return;
+    }
+    res.json({ status: 'success', data: { msg: 'No tasks found' } });
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send('Server Error');
+  }
+});
+
 module.exports = router;

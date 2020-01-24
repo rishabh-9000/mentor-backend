@@ -24,7 +24,7 @@ npm -v
 Clone the project
 
 ```bash
-git clone https://github.com/rishabh-9000/expertrons.git
+git clone https://github.com/rishabh-9000/mentor-backend.git
 
 cd expertrons
 npm install

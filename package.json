@@ -9,7 +9,7 @@
   "author": "Rishabh Dubey",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "config": "^3.2.4",
     "express": "^4.17.1",
     "express-validator": "^6.3.1",
